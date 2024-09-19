@@ -48,6 +48,20 @@ const UrlForm = () => {
         <Button type="submit" variant="contained" color="primary">
           Submit
         </Button>
+
+        {shortUrl && (
+          <Alert severity="success" style={{ marginTop: 16 }}>
+            {`${shortUrl.message} with code: ${shortUrl.short_code}`}
+          </Alert>
+        )}
+
+        {error && (
+          <Alert severity="error" style={{ marginTop: 16 }}>
+            {error.map((msg, index) => (
+              <div key={index}>{msg}</div>
+            ))}
+          </Alert>
+        )}
       </form>
     </Card>
   );
