@@ -23,9 +23,18 @@ const UrlForm = () => {
   };
 
   return (
-    <>
-      URL Form
-    </>
+    <Card
+      sx={{
+        margin: '50px auto',
+        padding: '20px',
+        maxWidth: 600,
+        backgroundColor: '#F6F6F6',
+      }}
+    >
+      <Typography variant="h5" gutterBottom>
+        Shorten Your URL
+      </Typography>
+    </Card>
   );
 };
 
