@@ -13,9 +13,18 @@ const UrlTable = () => {
     fetchUrls();
   }, []);
   return (
-    <>
-      URL Table
-    </>
+    <Card
+      sx={{
+        margin: '50px auto',
+        padding: '20px',
+        maxWidth: 900,
+        backgroundColor: '#F6F6F6',
+      }}
+    >
+      <Typography variant="h5" gutterBottom>
+        Top 100 Most Accessed URLs
+      </Typography>
+    </Card>
   );
 };
 
