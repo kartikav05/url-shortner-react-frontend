@@ -3,6 +3,7 @@ import { Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Paper
 import { getTopUrls } from '../service';
 
 const UrlTable = () => {
+  const [urls, setUrls] = useState([]);
 
   return (
     <>
