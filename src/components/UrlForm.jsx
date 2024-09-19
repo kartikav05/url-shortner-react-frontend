@@ -34,6 +34,21 @@ const UrlForm = () => {
       <Typography variant="h5" gutterBottom>
         Shorten Your URL
       </Typography>
+      <form onSubmit={handleSubmit}>
+        <TextField
+          label="Enter URL"
+          variant="outlined"
+          name="full_url"
+          fullWidth
+          value={url}
+          onChange={(e) => setUrl(e.target.value)}
+          required
+          sx={{ marginBottom: 2 }}
+        />
+        <Button type="submit" variant="contained" color="primary">
+          Submit
+        </Button>
+      </form>
     </Card>
   );
 };
